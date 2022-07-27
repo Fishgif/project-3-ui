@@ -1,13 +1,9 @@
-import './App.css';
+import Home from "./pages/home/Home";
+ 
+ 
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-       <p> init front end</p>
-      </header>
-    </div>
-  );
+  return <Home/> ;
 }
 
 export default App;

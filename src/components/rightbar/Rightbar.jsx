@@ -1,6 +1,6 @@
 import "./rightbar.css";
-// import { Users } from "../../dummyData";
-// import Online from "../online/Online";
+import { Users } from "../../dummyData";
+import Online from "../online/Online";
 
 export default function Rightbar({ profile }) {
   const HomeRightbar = () => {
@@ -17,18 +17,13 @@ export default function Rightbar({ profile }) {
         <img className="rightbarAd" src="/assets/assets/posts/ad.png" alt="" />
         <h4 className="rightbarTitle">Online Friends</h4>
         <ul className="rightbarFriendList">
+         
+        {Users.map((u) => (
+            <Online key={u.id} user={u} />
+          ))}
         
-          <li className="rightBarFriend">
-            <div className="rightbarProfileImageContainer">
-            <img className="rightbarProfileImage" 
-            src="/assets/assets/profilepics/profilepic4.png" alt="" />
-            
-            <span className="rightbarOnlineStatus"></span>
-            
-             <span className="rightbarUserName"> Collin Robinson</span>
-
-            </div>
-          </li>
+         
+          
         </ul>
       </>
     );
@@ -41,44 +36,72 @@ export default function Rightbar({ profile }) {
         <div className="rightbarInfo">
           <div className="rightbarInfoItem">
             <span className="rightbarInfoKey">City:</span>
-            <span className="rightbarInfoValue">New York</span>
+            <span className="rightbarInfoValue">Cape Town</span>
           </div>
           <div className="rightbarInfoItem">
             <span className="rightbarInfoKey">From:</span>
-            <span className="rightbarInfoValue">Madrid</span>
+            <span className="rightbarInfoValue">Knysna</span>
           </div>
           <div className="rightbarInfoItem">
             <span className="rightbarInfoKey">Relationship:</span>
-            <span className="rightbarInfoValue">Single</span>
+            <span className="rightbarInfoValue">Married</span>
           </div>
         </div>
-        <h4 className="rightbarTitle">User friends</h4>
+        <h4 className="rightbarTitle">Following</h4>
         <div className="rightbarFollowings">
           <div className="rightbarFollowing">
+          <img
+              src="assets/assets/profilepics/profile8.png"
+              alt=""
+              className="rightbarFollowingImg"
+            />
+            <span className="rightbarFollowingName">Liesl Dreyer</span>
+          </div>
           
-            <span className="rightbarFollowingName">John Carter</span>
+          <div className="rightbarFollowing">
+          <img
+              src="assets/assets/profilepics/profile3.png"
+              alt=""
+              className="rightbarFollowingImg"
+            />
+            <span className="rightbarFollowingName">Liesl Dreyer</span>
           </div>
           <div className="rightbarFollowing">
-            
-            <span className="rightbarFollowingName">John Carter</span>
-          </div>
-          <div className="rightbarFollowing">
-            
-            <span className="rightbarFollowingName">John Carter</span>
-          </div>
-          <div className="rightbarFollowing">
+          <img
+              src="assets/assets/profilepics/profile4.png"
+              alt=""
+              className="rightbarFollowingImg"
+            />
            
-            <span className="rightbarFollowingName">John Carter</span>
+            <span className="rightbarFollowingName">Liesl Dreyer</span>
           </div>
           <div className="rightbarFollowing">
+          <img
+              src="assets/assets/profilepics/profile4.png"
+              alt=""
+              className="rightbarFollowingImg"
+            />
             
-            <span className="rightbarFollowingName">John Carter</span>
+            <span className="rightbarFollowingName">Liesl Dreyer</span>
           </div>
           <div className="rightbarFollowing">
-          
-            <span className="rightbarFollowingName">John Carter</span>
+          <img
+              src="assets/assets/profilepics/profile7.png"
+              alt=""
+              className="rightbarFollowingImg"
+            />
+            <span className="rightbarFollowingName">Liesl Dreyer</span>
           </div>
         </div>
+        <div className="rightbarFollowing">
+          <img
+              src="assets/assets/profilepics/profile7.png"
+              alt=""
+              className="rightbarFollowingImg"
+            />
+            <span className="rightbarFollowingName">Liesl Dreyer</span>
+          </div>
+       
       </>
     );
   };

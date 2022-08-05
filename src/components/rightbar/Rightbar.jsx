@@ -2,7 +2,8 @@ import "./rightbar.css";
 import { Users } from "../../dummyData";
 import Online from "../online/Online";
 
-export default function Rightbar({ profile }) {
+export default function Rightbar({ user }) {
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   const HomeRightbar = () => {
     return (
       <>
@@ -36,31 +37,27 @@ export default function Rightbar({ profile }) {
         <div className="rightbarInfo">
           <div className="rightbarInfoItem">
             <span className="rightbarInfoKey">City:</span>
-            <span className="rightbarInfoValue">Cape Town</span>
+            <span className="rightbarInfoValue">{user.city}</span>
           </div>
           <div className="rightbarInfoItem">
             <span className="rightbarInfoKey">From:</span>
-            <span className="rightbarInfoValue">Knysna</span>
+            <span className="rightbarInfoValue">{user.from}</span>
           </div>
           <div className="rightbarInfoItem">
             <span className="rightbarInfoKey">Relationship:</span>
-            <span className="rightbarInfoValue">Married</span>
+            <span className="rightbarInfoValue"> {user.relationship === 1
+                ? "Single"
+                : user.relationship === 1
+                ? "Married"
+                : "-"}
+                </span>
           </div>
         </div>
         <h4 className="rightbarTitle">Following</h4>
         <div className="rightbarFollowings">
           <div className="rightbarFollowing">
           <img
-              src="assets/assets/profilepics/profile8.png"
-              alt=""
-              className="rightbarFollowingImg"
-            />
-            <span className="rightbarFollowingName">Liesl Dreyer</span>
-          </div>
-          
-          <div className="rightbarFollowing">
-          <img
-              src="assets/assets/profilepics/profile3.png"
+              src={`${PF}profilepics/profile8.png`}
               alt=""
               className="rightbarFollowingImg"
             />
@@ -68,47 +65,52 @@ export default function Rightbar({ profile }) {
           </div>
           <div className="rightbarFollowing">
           <img
-              src="assets/assets/profilepics/profile4.png"
+              src={`${PF}profilepics/profile3.png`}
               alt=""
               className="rightbarFollowingImg"
             />
-           
             <span className="rightbarFollowingName">Liesl Dreyer</span>
           </div>
           <div className="rightbarFollowing">
           <img
-              src="assets/assets/profilepics/profile4.png"
+              src={`${PF}profilepics/profile4.png`}
               alt=""
               className="rightbarFollowingImg"
             />
-            
             <span className="rightbarFollowingName">Liesl Dreyer</span>
           </div>
           <div className="rightbarFollowing">
           <img
-              src="assets/assets/profilepics/profile7.png"
+              src={`${PF}profilepics/profile4.png`}
+              alt=""
+              className="rightbarFollowingImg"
+            />
+            <span className="rightbarFollowingName">Liesl Dreyer</span>
+          </div>
+          <div className="rightbarFollowing">
+          <img
+              src={`${PF}profilepics/profile7.png`}
+              alt=""
+              className="rightbarFollowingImg"
+            />
+            <span className="rightbarFollowingName">Liesl Dreyer</span>
+          </div>
+          <div className="rightbarFollowing">
+          <img
+              src={`${PF}profilepics/profile7.png`}
               alt=""
               className="rightbarFollowingImg"
             />
             <span className="rightbarFollowingName">Liesl Dreyer</span>
           </div>
         </div>
-        <div className="rightbarFollowing">
-          <img
-              src="assets/assets/profilepics/profile7.png"
-              alt=""
-              className="rightbarFollowingImg"
-            />
-            <span className="rightbarFollowingName">Liesl Dreyer</span>
-          </div>
-       
       </>
     );
   };
   return (
     <div className="rightbar">
       <div className="rightbarWrapper">
-        {profile ? <ProfileRightbar /> : <HomeRightbar />}
+        {user ? <ProfileRightbar /> : <HomeRightbar />}
       </div>
     </div>
   );

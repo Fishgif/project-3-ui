@@ -2,8 +2,10 @@ import "./leftbar.css";
 
 
 import {
-  Feed, ChatBubbleOutline, PlayCircleFilledOutlined, Group, Bookmark, HelpOutline, WorkOutline, Event,
-  School } from "@mui/icons-material";
+  RssFeed, ChatBubbleOutline, PlayCircleFilledOutlined, Group, Bookmark, HelpOutline, WorkOutline, Event,
+    School } from "@material-ui/icons";
+
+
 import { Users } from "../../dummyData";
 import CloseFriend from "../friends/Friends";
 
@@ -13,7 +15,7 @@ export default function Sidebar() {
       <div className="leftbarWrapper">
         <ul className="leftbarList">
           <li className="leftbarListItem">
-            <Feed className="leftbarIcon" />
+            <RssFeed className="leftbarIcon" />
             <span className="leftbarListItemText">Feed</span>
           </li>
           <li className="leftbarListItem">

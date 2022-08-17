@@ -1,5 +1,5 @@
 import "./leftbar.css";
-
+import { Link } from "react-router-dom";
 
 import {
   RssFeed, ChatBubbleOutline, PlayCircleFilledOutlined, Group, Bookmark, HelpOutline, WorkOutline, Event,
@@ -15,8 +15,10 @@ export default function Sidebar() {
       <div className="leftbarWrapper">
         <ul className="leftbarList">
           <li className="leftbarListItem">
+          <Link to="/" style={{textDecoration:"none"}}>
             <RssFeed className="leftbarIcon" />
             <span className="leftbarListItemText">Feed</span>
+            </Link>
           </li>
           <li className="leftbarListItem">
             <ChatBubbleOutline className="leftbarIcon" />

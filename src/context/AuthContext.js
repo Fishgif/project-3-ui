@@ -3,19 +3,20 @@ import AuthReducer from "./AuthReducer";
 
 
 const INITIAL_STATE = {
-    // user:JSON.parse(localStorage.getItem("user")) || null,
-    // isFetching: false,
-    // error: false,
+    user:JSON.parse(localStorage.getItem("user")) || null,
+    isFetching: false,
+    error: false,
     
-user:{
-  _id: "62de9ba31b48eeeb528856b0",
-  username: "Marc",
+// user:{
+//   _id: "62de9ba31b48eeeb528856b0",
+//   username: "Marc",
 
- email: "test@me.com",
+//  email: "test@me.com",
 
-  },
-  isFetching: false,
-  error: false,
+//   },
+//   isFetching: false,
+//   error: false,
+// 
 }
 
 

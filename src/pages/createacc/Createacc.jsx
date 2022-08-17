@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useRef } from "react";
 import "./createacc.css";
+import { Link } from "react-router-dom";
 
 import { useHistory } from "react-router";
 
@@ -23,7 +24,7 @@ export default function Register() {
       }; 
 
          try {
-        // await axios.post("/auth/createacc", user);
+        await axios.post("/auth/createacc", user);
         history.push("/login");
         } catch (err) {
         console.log(err);
@@ -71,7 +72,9 @@ export default function Register() {
               type="password"
             />
             <button className="loginButton" type="submit"> Sign Up</button>
+            <Link to="/login" style={{textDecoration:"none"}}>
             <button className="loginRegisterButton">Log into Account</button>
+            </Link>
           </form>
         </div>
       </div>

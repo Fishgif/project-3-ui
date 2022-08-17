@@ -15,8 +15,8 @@ function App(){
         {user ? <Home /> : <Createacc />}
       </Route>
       <Route path="/login">{user ? <Redirect to="/" /> : <Login />}</Route>
-      <Route path="/register">
-        {user ? <Redirect to="/" /> : <Createacc />}
+      <Route path="/createacc">
+        {!user ? <Redirect to="/" /> : <Createacc />}
       </Route>
       <Route path="/profile/:username">
         <Profile />

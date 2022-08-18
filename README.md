@@ -23,10 +23,10 @@ This app has been created to allow family and friends who do not live near one a
 ## Screen Shots
 ### Login
 
-![Login](./assets/images/huddlelogin.png)
+![Login](./assets/huddlelogin.png)
 
-### Login
-![Feed](./assets/images/feed.png)
+### Feed
+![Feed](./assets/feed.png)
 
 
 ### UI

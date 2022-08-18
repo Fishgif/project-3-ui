@@ -21,8 +21,8 @@ This app has been created to allow family and friends who do not live near one a
 * [Deployment](#deployment)
 
 ## Screen Shots
-![Login/Create Account Page](./assets/huddlelogin.png)
-![Feed Page](./assets/feed.png)
+![]Login/Create Account Page(assets/huddlelogin.png)
+![]Feed Page(assets/feed.png)
 
 
 ### UI
@@ -43,9 +43,8 @@ MVC
 Standard Create React App
 
 ## Packages
-"@emotion/react": "^11.9.3",
-    "@emotion/styled": "^11.9.3",
-    "@material-ui/core": "^4.11.3",
+
+    @material-ui/core: ^4.11.3,
     "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",

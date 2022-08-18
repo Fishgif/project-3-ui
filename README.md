@@ -75,8 +75,12 @@ N/A
 
 ## Deployment
 
-[Data Base](https://huddle-social-media.herokuapp.com/)
-[UI](https://dapper-madeleine-783831.netlify.app)
-[Github](https://github.com/Fishgif/project-3-ui)
-[Github](https://github.com/Fishgif/project-3)
+# Database on Heroku
+Data Base URL: (https://huddle-social-media.herokuapp.com/)
+# UI
+UI URL: (https://dapper-madeleine-783831.netlify.app/)
+# UI
+Github URL: (https://github.com/Fishgif/project-3-ui)
+Github URL: (https://github.com/Fishgif/project-3)
+
 

@@ -29,13 +29,13 @@ export default function Share() {
       newPost.img = fileName;
       console.log(newPost);
       try {
-        await axios.post("/upload", data);
+        await axios.post(process.env.API_HOST + "/upload", data);
       } catch (err) {
         
       }
     }
     try {
-      await axios.post("/posts", newPost);
+      await axios.post(process.env.API_HOST + "/posts", newPost);
       window.location.reload();
     } catch (err) {}
   };

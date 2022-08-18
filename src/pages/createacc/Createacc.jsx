@@ -24,7 +24,7 @@ export default function Register() {
       }; 
 
          try {
-        await axios.post("/auth/createacc", user);
+        await axios.post(process.env.API_HOST + "/auth/createacc", user);
         history.push("/login");
         } catch (err) {
         console.log(err);

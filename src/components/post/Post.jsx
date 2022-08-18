@@ -22,7 +22,7 @@ import { AuthContext } from "../../context/AuthContext";
 
     useEffect(() => {
       const fetchUser = async () => {
-        const res = await axios.get(`/users?userId=${post.userId}`);
+        const res = await axios.get(process.env.API_HOST + `/users?userId=${post.userId}`);
         setUser(res.data);
       };
       fetchUser();

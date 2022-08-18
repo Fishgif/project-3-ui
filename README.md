@@ -21,8 +21,12 @@ This app has been created to allow family and friends who do not live near one a
 * [Deployment](#deployment)
 
 ## Screen Shots
-![]Login/Create Account Page(assets/huddlelogin.png)
-![]Feed Page(assets/feed.png)
+### Login
+
+![Login](./assets/images/huddlelogin.png)
+
+### Login
+![Feed](./assets/images/feed.png)
 
 
 ### UI
